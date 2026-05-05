@@ -1,0 +1,33 @@
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: sans-serif; background: #f4f4f9; color: #333; }
+.app-container { display: flex; flex-direction: column; align-items: center; }
+
+.navbar {
+  position: fixed; top: 0; width: 100%; background: #222;
+  padding: 1rem; text-align: center; z-index: 100;
+}
+.navbar a { color: white; text-decoration: none; margin: 0 1rem; font-weight: bold; }
+.navbar a:hover { color: #4daaf5; }
+
+.section-container {
+  min-height: 100vh; width: 100%; max-width: 800px;
+  padding-top: 80px; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.card {
+  background: white; padding: 2rem; border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 80%; margin-top: 1rem;
+}
+
+.skill-list { list-style: none; padding: 0; display: flex; gap: 10px; justify-content: center; }
+.skill-list li { background: #e9ecef; padding: 5px 10px; border-radius: 4px; }
+
+.scoreboard { font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem; }
+.button-group { display: flex; gap: 10px; margin-top: 1rem; }
+button {
+  padding: 10px 20px; font-size: 1rem; cursor: pointer;
+  border: none; border-radius: 5px; background: #4daaf5; color: white;
+}
+button:hover { opacity: 0.9; }
