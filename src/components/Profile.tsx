@@ -6,8 +6,7 @@ export default function Profile() {
       <h2>個人簡介</h2>
       <div className="card">
         <h3>{myProfile.name}</h3>
-        <p><strong>科系：</strong> {myProfile.major}</p>
-        <p><strong>1：</strong> {myProfile.bio}</p>
+        <p><strong>關於我：</strong> {myProfile.bio}</p>
         <div>
           <strong>技能：</strong>
           <ul className="skill-list">
