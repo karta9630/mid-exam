@@ -1,4 +1,4 @@
-import { myProfile } from '../../../profileData';
+import { myProfile } from '../profileData';
 
 export default function Profile() {
   return (
@@ -7,11 +7,12 @@ export default function Profile() {
       <div className="card">
         <h3>{myProfile.name}</h3>
         <p><strong>科系：</strong> {myProfile.major}</p>
-        <p><strong>關於我：</strong> {myProfile.bio}</p>
+        <p><strong>1：</strong> {myProfile.bio}</p>
         <div>
           <strong>技能：</strong>
           <ul className="skill-list">
-            {myProfile.skills.map((skill, index) => (
+            {/* 這裡補上了 : string 和 : number 來明確定義型別，解決 TS7006 報錯 */}
+            {myProfile.skills.map((skill: string, index: number) => (
               <li key={index}>{skill}</li>
             ))}
           </ul>
